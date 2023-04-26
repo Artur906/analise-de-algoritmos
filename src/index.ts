@@ -68,3 +68,4 @@ Object.entries(algorithms).forEach((values) => {
 });
 
 console.table(JSON.parse(JSON.stringify(results)));
+
