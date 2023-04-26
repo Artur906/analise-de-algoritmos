@@ -1,137 +1,207 @@
-## algorithm beeing tested: insertionSort
+## insertionSort
 
-array type: growing
-small: 0.07112200260162353
-mid: 0.019893994331359865
-large: 0.0403219997882843
+### array de tamanho 5000
 
-array type: descending
-small: 15.020847998857498
-mid: 60.06516999840736
-large: 135.50454199552536
+| array inicial | tempo médio em `ms` |
+| ------------- | :------------------ |
+| crescente     | 0.07112200260162353 |
+| decrescente   | 15.020847998857498  |
+| aleatório     | 7.449162003993988   |
 
-array type: random
-small: 7.449162003993988
-mid: 28.37951400399208
-large: 64.89860399365425
+### array de tamanho 10000
 
-## algorithm beeing tested: mergeSort
+| array inicial | tempo médio em `ms`  |
+| ------------- | :------------------- |
+| crescente     | 0.019893994331359865 |
+| decrescente   | 60.06516999840736    |
+| aleatório     | 28.37951400399208    |
 
-array type: growing
-small: 2.8603659963607786
-mid: 4.724096001386642
-large: 7.061036002635956
+### array de tamanho 15000
 
-array type: descending
-small: 2.5045720028877256
-mid: 4.611393998861313
-large: 7.152256002426148
+| array inicial | tempo médio em `ms` |
+| ------------- | :------------------ |
+| crescente     | 0.0403219997882843  |
+| decrescente   | 135.50454199552536  |
+| aleatório     | 64.89860399365425   |
 
-array type: random
-small: 2.9281979990005493
-mid: 5.442610006332398
-large: 8.424922006130219
+## mergeSort
 
-## algorithm beeing tested: quickSortOnePointer
+### array de tamanho 5000
 
-array type: growing
-small: 26.246605998277666
-mid: x
-large: x
+| array inicial | tempo médio em `ms` |
+| ------------- | :------------------ |
+| crescente     | 2.8603659963607786  |
+| decrescente   | 2.5045720028877256  |
+| aleatório     | 2.9281979990005493  |
 
-array type: descending
-small: 19.764004000425338
-mid: x
-large: x
+### array de tamanho 10000
 
-array type: random
-small: 0.5309020030498505
-mid: 0.8674620020389557
-large: 1.2937759971618652
+| array inicial | tempo médio em `ms` |
+| ------------- | :------------------ |
+| crescente     | 4.724096001386642   |
+| decrescente   | 4.611393998861313   |
+| aleatório     | 5.442610006332398   |
 
-## algorithm beeing tested: dualPivotQuickSort
+### array de tamanho 15000
 
-array type: growing
-small: 7.953125996589661
-mid: 30.658150000572206
-large: x
+| array inicial | tempo médio em `ms` |
+| ------------- | :------------------ |
+| crescente     | 7.061036002635956   |
+| decrescente   | 7.152256002426148   |
+| aleatório     | 8.424922006130219   |
 
-array type: descending
-small: 10.029434000253678
-mid: 39.758109996318815
-large: x
+## SinglePivotQuickSort
 
-array type: random
-small: 1.736894006729126
-mid: 0.6798599994182587
-large: 1.0382460045814514
+### array de tamanho 5000
 
-## algorithm beeing tested: randomPivotQuickSort
+| array inicial | tempo médio em `ms` |
+| ------------- | :------------------ |
+| crescente     | 26.246605998277666  |
+| decrescente   | 19.764004000425338  |
+| aleatório     | 0.5309020030498505  |
 
-array type: growing
-small: 4.3629639995098115
-mid: 3.956998006105423
-large: 4.331337990760804
+### array de tamanho 10000
 
-array type: descending
-small: 1.5233939969539643
-mid: 2.850468000173569
-large: 5.366521999835968
+| array inicial | tempo médio em `ms`          |
+| ------------- | :--------------------------- |
+| crescente     | :( problema de recursividade |
+| decrescente   | :( problema de recursividade |
+| aleatório     | 0.8674620020389557           |
 
-array type: random
-small: 1.766411999464035
-mid: 3.1989840030670167
-large: 4.810103998184204
+### array de tamanho 15000
 
-## algorithm beeing tested: defaultSortMethod
+| array inicial | tempo médio em `ms`          |
+| ------------- | :--------------------------- |
+| crescente     | :( problema de recursividade |
+| decrescente   | :( problema de recursividade |
+| aleatório     | 1.2937759971618652           |
 
-array type: growing
-small: 0.2627360022068024
-mid: 0.5219199931621552
-large: 0.7328939938545227
+## dualPivotQuickSort
 
-array type: descending
-small: 0.2994000005722046
-mid: 0.5860499954223632
-large: 0.8677940058708191
+### array de tamanho 5000
 
-array type: random
-small: 1.7261200034618378
-mid: 3.5782719969749452
-large: 5.442421998977661
+| array inicial | tempo médio em `ms`          |
+| ------------- | :--------------------------- |
+| crescente     | 7.953125996589661            |
+| decrescente   | 30.658150000572206           |
+| aleatório     | :( problema de recursividade |
 
-algorithm beeing tested: heapSort
+### array de tamanho 10000
 
-array type: growing
-small: 0.9287939977645874
-mid: 1.5259319972991943
-large: 2.34845999956131
+| array inicial | tempo médio em `ms`          |
+| ------------- | :--------------------------- |
+| crescente     | 10.029434000253678           |
+| decrescente   | 39.758109996318815           |
+| aleatório     | :( problema de recursividade |
 
-array type: descending
-small: 0.7776919949054718
-mid: 1.4650219976902008
-large: 2.3507359993457793
+### array de tamanho 15000
 
-array type: random
-small: 0.9831740021705627
-mid: 1.9023780024051666
-large: 3.090690002441406
+| array inicial | tempo médio em `ms` |
+| ------------- | :------------------ |
+| crescente     | 1.736894006729126   |
+| decrescente   | 0.6798599994182587  |
+| aleatório     | 1.0382460045814514  |
 
-algorithm beeing tested: countingSort
+## randomPivotQuickSort
 
-array type: growing
-small: 0.22606599926948548
-mid: 0.18028200030326844
-large: 0.235246000289917
+### array de tamanho 5000
 
-array type: descending
-small: 0.06203000664710998
-mid: 0.15497199654579163
-large: 0.2375659990310669
+| array inicial | tempo médio em `ms` |
+| ------------- | :------------------ |
+| crescente     | 4.3629639995098115  |
+| decrescente   | 3.956998006105423   |
+| aleatório     | 4.331337990760804   |
 
-array type: random
-small: 0.1228220009803772
-mid: 0.2108460021018982
-large: 0.2546059942245483
+### array de tamanho 10000
 
-Algoritmo | array size: 5000 | array size: 10000 | array size: 15000 |
+| array inicial | tempo médio em `ms` |
+| ------------- | :------------------ |
+| crescente     | 1.5233939969539643  |
+| decrescente   | 2.850468000173569   |
+| aleatório     | 5.366521999835968   |
+
+### array de tamanho 15000
+
+| array inicial | tempo médio em `ms` |
+| ------------- | :------------------ |
+| crescente     | 1.766411999464035   |
+| decrescente   | 3.1989840030670167  |
+| aleatório     | 4.810103998184204   |
+
+## defaultSortMethod
+
+### array de tamanho 5000
+
+| array inicial | tempo médio em `ms` |
+| ------------- | :------------------ |
+| crescente     | 0.2627360022068024  |
+| decrescente   | 0.5219199931621552  |
+| aleatório     | 0.7328939938545227  |
+
+### array de tamanho 10000
+
+| array inicial | tempo médio em `ms` |
+| ------------- | :------------------ |
+| crescente     | 0.2994000005722046  |
+| decrescente   | 0.5860499954223632  |
+| aleatório     | 0.8677940058708191  |
+
+### array de tamanho 15000
+
+| array inicial | tempo médio em `ms` |
+| ------------- | :------------------ |
+| crescente     | 1.7261200034618378  |
+| decrescente   | 3.5782719969749452  |
+| aleatório     | 5.442421998977661   |
+
+## heapSort
+
+### array de tamanho 5000
+
+| array inicial | tempo médio em `ms` |
+| ------------- | :------------------ |
+| crescente     | 0.9287939977645874  |
+| decrescente   | 1.5259319972991943  |
+| aleatório     | 2.34845999956131    |
+
+### array de tamanho 10000
+
+| array inicial | tempo médio em `ms` |
+| ------------- | :------------------ |
+| crescente     | 0.7776919949054718  |
+| decrescente   | 1.4650219976902008  |
+| aleatório     | 2.3507359993457793  |
+
+### array de tamanho 15000
+
+| array inicial | tempo médio em `ms` |
+| ------------- | :------------------ |
+| crescente     | 0.9831740021705627  |
+| decrescente   | 1.9023780024051666  |
+| aleatório     | 3.090690002441406   |
+
+## countingSort
+
+### array de tamanho 5000
+
+| array inicial | tempo médio em `ms` |
+| ------------- | :------------------ |
+| crescente     | 0.22606599926948548 |
+| decrescente   | 0.18028200030326844 |
+| aleatório     | 0.235246000289917   |
+
+### array de tamanho 10000
+
+| array inicial | tempo médio em `ms` |
+| ------------- | :------------------ |
+| crescente     | 0.06203000664710998 |
+| decrescente   | 0.15497199654579163 |
+| aleatório     | 0.2375659990310669  |
+
+### array de tamanho 15000
+
+| array inicial | tempo médio em `ms` |
+| ------------- | :------------------ |
+| crescente     | 0.1228220009803772  |
+| decrescente   | 0.2108460021018982  |
+| aleatório     | 0.2546059942245483  |
