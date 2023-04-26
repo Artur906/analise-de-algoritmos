@@ -1,3 +1,4 @@
+import * as fs from 'fs';
 import algorithms from './algorithms';
 import arrays, { isSorted } from './arrays';
 
@@ -67,5 +68,6 @@ Object.entries(algorithms).forEach((values) => {
 	});
 });
 
+fs.writeFile('results.json', JSON.stringify(results), (error) => console.log(error))
 console.table(JSON.parse(JSON.stringify(results)));
 
