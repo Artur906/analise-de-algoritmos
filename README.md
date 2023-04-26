@@ -1,5 +1,7 @@
 # Algoritmos de ordenação
 
+Se quiser rodar o projeto no seu ambiente local pode seguir [esses paços](./runningTheProject.md)!
+
 ## Insertion Sort
 
 O Insertion Sort tem uma complexidade de tempo de O(n^2) no pior caso, onde n é o número de elementos no vetor. Porém, para pequenas quantidades de dados, o Insertion Sort pode ser mais eficiente do que algoritmos mais complexos, como o Merge Sort ou o Quick Sort.
