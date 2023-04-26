@@ -6,7 +6,7 @@ type algorithmResults = {
 	algorithmName: string;
 	arrayType: string;
 	arraySize: string;
-	mediumTime: number;
+	averageTime: number;
 };
 
 const results: algorithmResults[] = [];
@@ -36,7 +36,7 @@ Object.entries(algorithms).forEach((values) => {
 					algorithmName: algorithmName,
 					arrayType: arrayTypeName,
 					arraySize: arraySizeName,
-					mediumTime: -1,
+					averageTime: -1,
 				};
 				results.push(finalResult);
 			} else {
@@ -56,13 +56,13 @@ Object.entries(algorithms).forEach((values) => {
 					algorithmName: algorithmName,
 					arrayType: arrayTypeName,
 					arraySize: arraySizeName,
-					mediumTime:
+					averageTime:
 						timeResults.reduce((previous, current) => previous + current, 0) /
 						50,
 				};
 
 				results.push(finalResult);
-				console.log(arraySizeName + ':', finalResult.mediumTime);
+				console.log(arraySizeName + ':', finalResult.averageTime);
 			}
 		});
 	});
